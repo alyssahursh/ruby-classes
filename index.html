@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ruby Outfits!</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <h1>Ruby Classes, Explained with Outfits</h1>
+    <p>
+      Struggling to understand Ruby classes and instances? Let me try to explain it with something you do every day (whether you like it or not): create an outfit.
+    </p>
+    <p>
+      To make the idea of outfits fit the idea of Ruby Classes, let's pretend you have a little bit of a style uniform: Every day, your outfit consists of a top, a bottom, a hijab, a pair of shoes, and a piece of jewelry.
+    </p>
+    <p>
+      To make a new outfit, you need to specify five items.
+    </p>
+
+    <div class="row">
+      <div class="two columns">
+        <h5>
+          Here's a helpful drawing:
+        </h5>
+        <img src="assets/class_outfit.jpg" />
+      </div>
+      <div class="two columns">
+        <h5>
+          And here's some Ruby code:
+        </h5>
+
+        <div class="code">
+<pre><code>class Outfit
+  attr_accessor :top, :bottom, :hijab, :shoes, :jewelry
+
+  def initialize(top, bottom, hijab, shoes, jewelry)
+    @top = top
+    @bottom = bottom
+    @hijab = hijab
+    @shoes = shoes
+    @jewelery = jewelery
+  end
+
+end</code></pre>
+        </div>
+        <p>
+          This Ruby class called "Outfit" is just the code that tells you what an outfit is made of. It says: when you want to make a new outfit, you'll need to specify a top, bottom, hijab, shoes, and jewelry.
+        </p>
+      </div>
+
+    </div>
+
+    <h2>
+      So, let's get dressed.
+    </h2>
+    <p>
+      On Monday, you put together a new outfit, and you name it <b>monday_outfit</b>.
+    </p>
+
+    <div class="row">
+      <div class="two columns">
+        <h5>
+          Here's a helpful drawing:
+        </h5>
+        <img src="assets/monday_outfit.jpg" />
+      </div>
+      <div class="two columns">
+        <h5>
+          And here's some Ruby code:
+        </h5>
+
+        <div class="code">
+<pre><code>monday_outfit = Outfit.new(
+  "blue polka dot shirt",
+  "navy jeans",
+  "teal scarf",
+  "black pointy flats",
+  "sapphire earrings")</code></pre>
+        </div>
+        <p>
+          This code says: Make a new <b>instance</b> of the class "Outfit," call it "monday_outfit" and hold on to the details about the top, bottom, hijab, shoes, and jewelry.
+        </p>
+      </div>
+
+    </div>
+
+  <h2>
+    Cool, cool. Now it's Tuesday.
+  </h2>
+  <p>
+    Let's make another outfit and call it <b>tuesday_outfit</b>
+  </p>
+
+  <div class="row">
+    <div class="two columns">
+      <h5>
+        Here's a helpful drawing:
+      </h5>
+      <img src="assets/tuesday_outfit.jpg" />
+    </div>
+    <div class="two columns">
+      <h5>
+        And here's some Ruby code:
+      </h5>
+
+      <div class="code">
+<pre><code>tuesday_outfit = Outfit.new(
+  "brown and white striped shirt",
+  "peach skirt",
+  "orange scarf",
+  "brown loafers",
+  "orange bead necklace")</code></pre>
+      </div>
+      <p>
+        This code says: Make a <b>another</b> new <b>instance</b> of the class "Outfit," call it "tuesday_outfit" and hold on to the details about the top, bottom, hijab, shoes, and jewelry.
+      </p>
+    </div>
+
+  </div>
+  <h2>
+    Don't stop there! It's Wednesday!
+  </h2>
+  <p>
+    Let's make another outfit and call it <b>wednesday_outfit</b>
+  </p>
+
+  <div class="row">
+    <div class="two columns">
+      <h5>
+        Here's a helpful drawing:
+      </h5>
+      <img src="assets/wednesday_outfit.jpg" />
+    </div>
+    <div class="two columns">
+      <h5>
+        And here's some Ruby code:
+      </h5>
+
+      <div class="code">
+<pre><code>wednesday_outfit = Outfit.new(
+  "green and white chevron shirt",
+  "purple skirt",
+  "green scarf",
+  "purple striped shoes",
+  "pink gem earrings")</code></pre>
+      </div>
+      <p>
+        This code says: Make a <b>yet another</b> new <b>instance</b> of the class "Outfit," call it "wednesday_outfit" and hold on to the details about the top, bottom, hijab, shoes, and jewelry.
+      </p>
+    </div>
+
+  </div>
+
+  <h2>
+    You're probably getting the idea, but I drew more pictures!
+  </h2>
+  <p>
+    Let's make <b>thursday_outfit</b>
+  </p>
+
+  <div class="row">
+    <div class="two columns">
+      <h5>
+        Here's a helpful drawing:
+      </h5>
+      <img src="assets/thursday_outfit.jpg" />
+    </div>
+    <div class="two columns">
+      <h5>
+        And here's some Ruby code:
+      </h5>
+
+      <div class="code">
+<pre><code>thursday_outfit = Outfit.new(
+  "purle heart shirt",
+  "gray leggings",
+  "purple scarf",
+  "gray sneakers",
+  "black earrings")</code></pre>
+      </div>
+      <p>
+        This code says: Make a <b>yet another</b> new <b>instance</b> of the class "Outfit," call it "thursday_outfit" and hold on to the details about the top, bottom, hijab, shoes, and jewelry.
+      </p>
+    </div>
+
+  </div>
+
+  <h2>
+    Thank god it's Friday!
+  </h2>
+  <p>
+    Let's wrap up the week with <b>friday_outfit</b>
+  </p>
+
+  <div class="row">
+    <div class="two columns">
+      <h5>
+        Here's a helpful drawing:
+      </h5>
+      <img src="assets/friday_outfit.jpg" />
+    </div>
+    <div class="two columns">
+      <h5>
+        And here's some Ruby code:
+      </h5>
+
+      <div class="code">
+<pre><code>friday_outfit = Outfit.new(
+  "pink and white striped shirt",
+  "yellow skirt",
+  "pink scarf",
+  "pink flats",
+  "gold chevron necklace")</code></pre>
+      </div>
+      <p>
+        This code says: Make a <b>yet another</b> new <b>instance</b> of the class "Outfit," call it "friday_outfit" and hold on to the details about the top, bottom, hijab, shoes, and jewelry.
+      </p>
+    </div>
+
+  </div>
+
+  <h2>Great, but why is this useful?</h2>
+  <p>
+    Now that we have all these instances, we can get information from them.
+  </p>
+  <p>
+    <b>Like, hey, what bottom did I wear on Tuesday?</b>
+  </p>
+  <div class="code">
+<pre><code>puts tuesday_outfit.bottom</code></pre>
+  </div>
+  <p>
+    returns
+  </p>
+  <div class="code">
+<pre><code>peach skirt</code></pre>
+  </div>
+  <br />
+  <br />
+  <br />
+  <p>
+    <b>Or, which hijab did I wear on Friday?</b>
+  </p>
+  <div class="code">
+<pre><code>puts friday_outfit.hijab</code></pre>
+  </div>
+  <p>
+    returns
+  </p>
+  <div class="code">
+<pre><code>pink scarf</code></pre>
+  </div>
+  <br />
+  <br />
+  <br />
+  <p>
+    <b>We can even update an outfit:</b>
+  </p>
+  <div class="code">
+<pre><code>wednesday_outfit.shoes = "navy converse"
+puts wednesday_outfit.shoes</code></pre>
+  </div>
+  <p>
+    returns
+  </p>
+  <div class="code">
+<pre><code>navy converse</code></pre>
+  </div>
+<br />
+<br />
+<br />
+  <p>
+    <b>Or test if an aspect of an outfit matches a particular string:</b>
+  </p>
+  <div class="code">
+<pre><code>puts monday_outfit.top = "blue polka dot shirt"</code></pre>
+  </div>
+  <p>
+    returns
+  </p>
+  <div class="code">
+<pre><code>true</code></pre>
+  </div>
+
+<h2>I hope this helps!</h2>
+<p>
+  You're doing great; keep at it.
+</p>
+
+<p>@ me on twitter with questions or feedback about this quick little lesson: <a href="www.twitter.com/whistlehello">@whistlehello</a>
+</p>
+
+<br />
+<br />
+<br /><br />
+<br />
+<br /><br />
+<br />
+<br />
+  </body>
+</html>
